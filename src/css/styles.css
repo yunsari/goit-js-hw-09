@@ -1,5 +1,11 @@
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
   background: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .gallery {
@@ -31,4 +37,57 @@ body {
 
 .gallery-image:hover {
   transform: scale(1.05);
+}
+
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.feedback-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #222;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #888;
+  background-color: #fff;
+}
+
+.feedback-form button {
+  background-color: #444;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1rem;
+  width: 110%;
+}
+
+.feedback-form button:hover {
+  background-color: #222;
 }
